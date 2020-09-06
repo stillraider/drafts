@@ -1,0 +1,99 @@
+@import "nulling-styles";
+@import "fonts";
+
+%widthCenter {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    .header {
+        &__container {
+            @extend %widthCenter;
+            display: flex;
+            justify-content: space-between
+        }
+        &__description {
+            margin-top: 16px;
+            & p {
+                font-family: "IBMPlexMono-Medium";
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: #0E0A19;
+                &:last-child::after {
+                    content: "";
+                    width: 16px;
+                    height: 7px;
+                    position: absolute;
+                    margin: 8px 0 0 3px;
+                    background: url(../img/description/Vector.svg) center/cover no-repeat;
+                }
+            }
+        }
+        &__info {
+            display: flex;
+        }
+        &__address {
+            display: flex;
+            align-items: center;
+            margin-right: 27px;
+            &-loc {
+                background: url(../img/description/loc.svg) center/cover no-repeat;
+                width: 10px;
+                height: 12px;
+                margin: 0 10px 1px 0;
+            }
+            & p {
+                font-family: "IBMPlexSans-Medium";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+        &__contacts {
+            background: #312F2F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 30px;
+            width: 142px;
+            height: 60px;
+            &-title {
+                font-family: "IBMPlexSans-Light";
+                margin-bottom: 5px;
+            }
+            &-title, .header__contacts-number {
+                color: #FFFFFF;
+                font-size: 12px;
+                line-height: 12px;
+            }
+            &-number a {
+                font-family: "IBMPlexSans-Medium";
+                color: #FFFFFF;
+            }
+        }
+        &__curtain {
+            width: 70px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #FF3B3D;
+            & div {
+                width: 36px;
+                height: 4px;
+                background: #FFFFFF;
+                margin-bottom: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
