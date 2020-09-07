@@ -1,9 +1,4 @@
-let connectionMail = $(".page-wrap__connection-mail");
-let connectionSurfacing = $(".page-wrap__connection-surfacing");
 
-connectionMail.on("click", function () {
-    connectionSurfacing.toggleClass("showMail");
-})
 
 
 
