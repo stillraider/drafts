@@ -566,7 +566,7 @@ input[type='number'] {
 .slider-wrap__title p:last-child::after {
   content: "";
   position: absolute;
-  margin-top: 22px;
+  margin: 22px 0 0 7px;
   width: 50px;
   height: 20px;
   background: url(../img/description/Vector.svg) center/cover no-repeat;
@@ -609,4 +609,197 @@ input[type='number'] {
   font-size: 12px;
   line-height: 104%;
   color: #AA9FA1;
+}
+
+.examples__container {
+  position: relative;
+  margin-top: 124px;
+}
+
+.examples__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.examples__wrap:nth-child(2) {
+  margin-top: 30px;
+}
+
+.examples__columns {
+  position: relative;
+}
+
+.examples__columns:nth-child(2) {
+  margin: 55px 0 0 30px;
+}
+
+.examples__columns:nth-child(2) .examples__img {
+  position: absolute;
+  left: -40px;
+  width: 540px;
+  height: 565px;
+}
+
+.examples__title {
+  font-family: "IBMPlexSans-Medium";
+  margin-bottom: 43px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+  color: #0E0A19;
+}
+
+.examples__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 683px;
+}
+
+.examples__img {
+  width: 370px;
+  height: 574px;
+}
+
+.examples__content {
+  margin: 100px 0 41px 515px;
+}
+
+.examples__content-text p:first-child {
+  font-family: "IBMPlexSans-Medium";
+  margin-bottom: 26px;
+  width: 127px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0E0A19;
+}
+
+.examples__content-text p {
+  font-family: "IBMPlexSans-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #C4C4C4;
+}
+
+.examples__year {
+  margin-top: 114px;
+}
+
+.examples__year::after {
+  content: "";
+  position: absolute;
+  background: url(../img/description/Vector.svg) center/cover no-repeat;
+  width: 49px;
+  height: 21px;
+  margin: -29px 0 0 5px;
+}
+
+.examples__year p {
+  font-family: "IBMPlexSans-Light";
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 83px;
+  color: #0E0A19;
+}
+
+.examples__year span {
+  font-family: "IBMPlexSans-Light";
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.examples__wrapper {
+  margin-top: 60px;
+}
+
+.examples__wrapper-title {
+  font-family: "IBMPlexSans-Medium";
+  margin-bottom: 26px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0E0A19;
+}
+
+.examples__wrapper-subtitle {
+  font-family: "IBMPlexSans-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #C4C4C4;
+}
+
+.examples__inner {
+  position: relative;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.examples__inner-img {
+  position: absolute;
+  right: 0;
+  width: 454px;
+  height: 500px;
+}
+
+.examples__description {
+  margin-top: 50px;
+}
+
+.examples__description-title {
+  margin-bottom: 80px;
+}
+
+.examples__description-title h1 {
+  font-family: "IBMPlexSans-Medium";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0E0A19;
+}
+
+.examples__description-title p {
+  font-family: "IBMPlexSans-Light";
+  width: 200px;
+  margin-top: 27px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #C4C4C4;
+}
+
+.examples__description-text p:first-child {
+  font-family: "IBMPlexSans-Light";
+  font-weight: 300;
+  margin-bottom: 27px;
+  font-size: 72px;
+}
+
+.examples__description-text p:first-child::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 22px;
+  margin: 20px 0 0 4px;
+  background: url(../img/description/Vector.svg) center/cover no-repeat;
+}
+
+.examples__description-text p {
+  font-family: "IBMPlexSans-Medium";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0E0A19;
+}
+
+.examples__onePhoto {
+  position: absolute;
+  right: 0;
+  bottom: 55px;
+  width: 470px;
+  height: 570px;
 }

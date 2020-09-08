@@ -340,7 +340,7 @@ input[type='number'] {
         & p:last-child::after {
             content: "";
             position: absolute;
-            margin-top: 22px;
+            margin: 22px 0 0 7px;
             width: 50px;
             height: 20px;
             background: url(../img/description/Vector.svg) center/cover no-repeat;
@@ -376,5 +376,168 @@ input[type='number'] {
             line-height: 104%;
             color: #AA9FA1;
         }
+    }
+}
+.examples {
+    &__container {
+        position: relative;
+        margin-top: 124px;
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        &:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+    &__columns {
+        position: relative;
+        &:nth-child(2) {
+            margin: 55px 0 0 30px;
+            .examples__img {
+                position: absolute;
+                left: -40px;
+                width: 540px;
+                height: 565px;
+            }
+        }
+    }
+    &__title {
+        font-family: "IBMPlexSans-Medium";
+        margin-bottom: 43px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 50px;
+        color: #0E0A19;
+    }
+    &__flex {
+        display: flex;
+        width: 683px;
+    }
+    &__img {
+        width: 370px;
+        height: 574px;
+    }
+    &__content {
+        margin: 100px 0 41px 515px;
+        &-text {
+            & p:first-child {
+                font-family: "IBMPlexSans-Medium";
+                margin-bottom: 26px;
+                width: 127px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 19px;
+                color: #0E0A19;
+            }
+            & p {
+                font-family: "IBMPlexSans-Light";
+                font-size: 12px;
+                line-height: 12px;
+                color: #C4C4C4;
+            }
+        }
+    }
+    &__year {
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../img/description/Vector.svg) center/cover no-repeat;
+            width: 49px;
+            height: 21px;
+            margin: -29px 0 0 5px;
+        }
+        margin-top: 114px;
+        & p {
+            font-family: "IBMPlexSans-Light";
+            font-weight: 300;
+            font-size: 72px;
+            line-height: 83px;
+            color: #0E0A19;
+        }
+        & span {
+            font-family: "IBMPlexSans-Light";
+            font-weight: 600;
+            font-size: 19px;
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        &-title {
+            font-family: "IBMPlexSans-Medium";
+            margin-bottom: 26px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19px;
+            color: #0E0A19;
+        }
+        &-subtitle {
+            font-family: "IBMPlexSans-Light";
+            font-size: 12px;
+            line-height: 12px;
+            color: #C4C4C4;
+        }
+    }
+    &__inner {
+        position: relative;
+        width: 700px;
+        display: flex;
+        &-img {
+            position: absolute;
+            right: 0;
+            width: 454px;
+            height: 500px;
+        }
+    }
+    &__description {
+        margin-top: 50px;
+        &-title {
+            margin-bottom: 80px;
+            & h1 {
+                font-family: "IBMPlexSans-Medium";
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 19px;
+                color: #0E0A19;
+            }
+            & p {
+                font-family: "IBMPlexSans-Light";
+                width: 200px;
+                margin-top: 27px;
+                font-size: 12px;
+                line-height: 12px;
+                color: #C4C4C4
+            }
+        }
+        &-text {
+            & p:first-child {
+                font-family: "IBMPlexSans-Light";
+                font-weight: 300;
+                margin-bottom: 27px;
+                font-size: 72px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 22px;
+                    margin: 20px 0 0 4px;
+                    background: url(../img/description/Vector.svg) center/cover no-repeat;
+                }
+            }
+            & p {
+                font-family: "IBMPlexSans-Medium";
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21px;
+                color: #0E0A19;
+            }
+        }
+    }
+    &__onePhoto {
+        position: absolute;
+        right: 0;
+        bottom: 55px;
+        width: 470px;
+        height: 570px;
     }
 }
