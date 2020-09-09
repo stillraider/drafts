@@ -1110,3 +1110,219 @@ input[type='number'] {
   width: 24px;
   height: 24px;
 }
+
+.columns__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 85px;
+}
+
+.columns__flex:last-child {
+  margin-left: 229px;
+}
+
+.columns__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.columns__wrapper:first-child .columns__wrapper-text:first-child {
+  -webkit-box-shadow: 0 21px 46px -10px #ad9999;
+          box-shadow: 0 21px 46px -10px #ad9999;
+}
+
+.columns__wrapper:first-child .columns__wrapper-text:last-child {
+  background: initial;
+  margin-right: 0;
+}
+
+.columns__wrapper:first-child .columns__wrapper-text:last-child h1 {
+  color: black;
+}
+
+.columns__wrapper:first-child .columns__wrapper-text:last-child p {
+  color: #FF3B3D;
+}
+
+.columns__wrapper:last-child .columns__wrapper-text:first-child {
+  background: initial;
+  margin-bottom: 0;
+}
+
+.columns__wrapper:last-child .columns__wrapper-text:first-child h1 {
+  color: black;
+}
+
+.columns__wrapper:last-child .columns__wrapper-text:first-child p {
+  color: #FF3B3D;
+}
+
+.columns__wrapper-text {
+  margin: 0 30px 30px 0;
+  padding: 30px;
+  width: 270px;
+  height: 220px;
+  background: #FF3B3D;
+}
+
+.columns__wrapper-text h1 {
+  font-family: "IBMPlexSans-Bold";
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.columns__wrapper-text p {
+  font-family: "IBMPlexSans-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.columns__return {
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  height: 220px;
+}
+
+.columns__context {
+  width: 270px;
+  height: 262px;
+  position: relative;
+  background: #E8DFE0;
+  border-radius: 30px 30px 0 0;
+  padding: 8px 9px 0 9px;
+}
+
+.columns__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.columns__inside {
+  padding: 0 30px;
+  background: #FF3B3D;
+  border-radius: 36px 36px 0 0;
+  width: 252px;
+  height: 300px;
+  position: absolute;
+}
+
+.columns__phone-title {
+  margin-top: 35px;
+}
+
+.columns__phone-title h1 {
+  font-family: "IBMPlexSans-Bold";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.columns__phone-title h1:last-child::after {
+  content: "";
+  position: absolute;
+  background: url(../img/phone/Vector-white.svg) center/cover no-repeat;
+  margin: 10px 0 0 5px;
+  width: 26px;
+  height: 11px;
+}
+
+.columns__curtain {
+  border-radius: 0 0 17px 17px;
+  position: relative;
+  width: 133px;
+  height: 21px;
+  background: #0E0A19;
+}
+
+.columns__poin {
+  right: 27px;
+  top: 5px;
+  border-radius: 50%;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FFFFFF;
+}
+
+.columns__price {
+  margin-top: 50px;
+}
+
+.columns__price-teeth {
+  background: url(../img/phone/Rectangle.svg) 40% 0%;
+  background-size: 100%;
+  width: 100%;
+  height: 17px;
+  border-bottom: 0.2px solid #e8e5e6;
+}
+
+.columns__price-figure {
+  background: -o-radial-gradient(50% 53.85%, 50% 46.15%, #FFFFFF 0%, #F7F1F1 100%);
+  background: radial-gradient(50% 46.15% at 50% 53.85%, #FFFFFF 0%, #F7F1F1 100%);
+  width: 100%;
+  height: 88px;
+}
+
+.columns__price-figure p {
+  font-family: "IBMPlexSans-Bold";
+  text-align: center;
+  padding-top: 14px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+  color: #FF3B3D;
+}
+
+.columns__title {
+  margin-bottom: 20px;
+}
+
+.columns__title h1 {
+  font-family: "IBMPlexSans-Bold";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+  color: #0E0A19;
+}
+
+.columns__title h1:last-child::after {
+  content: "";
+  position: absolute;
+  background: url(../img/description/Vector.svg) center/cover no-repeat;
+  width: 57px;
+  height: 20px;
+  margin: 24px 0 0 10px;
+}
+
+.columns__text {
+  margin-bottom: 65px;
+}
+
+.columns__text p {
+  font-family: "IBMPlexSans-Bold";
+  width: 238px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  color: #312F2F;
+}
+
+.columns__button span {
+  font-family: "IBMPlexSans-Light";
+  font-weight: bold;
+  font-size: 16px;
+}
