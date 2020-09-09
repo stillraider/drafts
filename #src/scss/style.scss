@@ -153,95 +153,6 @@ input[type='number'] {
             }
         }
     }
-    .wrapper {
-        display: flex;
-        margin-bottom: 20px;
-        .label {
-            &:first-child {
-                margin-right: 30px;
-            }
-            &__title {
-                font-family: "IBMPlexSans-Medium";
-                margin-bottom: 21px;
-                font-size: 14px;
-                line-height: 15px;
-                color: #C4C4C4;
-            }
-            &__input {
-                font-family: "IBMPlexSans-Medium";
-                padding-left: 16px;
-                font-size: 14px;
-                line-height: 15px;
-                color: #FF3B3D;
-                width: 270px;
-                height: 76px;
-                border: 1px solid #E8DFE0;
-                box-sizing: border-box;
-                &:focus {
-                    border: 1px solid #FF3B3D;
-                }
-            }
-        }
-        .choose {
-            margin-top: 36px;
-            display: flex;
-            cursor: pointer;
-            &__btn {
-                background: #FF3B3D;
-                font-family: "IBMPlexSans-Light";
-                position: relative;
-                text-transform: uppercase;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 14px;
-                line-height: 15px;
-                color: #FFFFFF;
-                width: 202px;
-                height: 76px;
-            }
-            &__arrow {
-                background: #0E0A19;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 68px;
-                height: 76px;
-                &::before {
-                    content: "";
-                    background: url(../img/arrow/arrow.svg) center/cover no-repeat;
-                    position: absolute;
-                    width: 13px;
-                    height: 32px;
-                }
-            }
-        }
-    }
-    .check-mark {
-        display: block !important;
-    }
-    .flex-block {
-        display: flex;
-        &__container {
-            display: flex;
-            width: 270px;
-            margin-right: 30px;
-        }
-        &__jackdaw {
-            width: 10px;
-            height: 10px;
-            background: #FF3B3D;
-            cursor: pointer;
-        }
-
-        &__text {
-            font-family: "IBMPlexSans-Light";
-            margin-left: 15px;
-            font-size: 12px;
-            line-height: 12px;
-            color: #C4C4C4;
-        }
-    }
     .rectangle {
         margin-top: 15px;
         position: relative;
@@ -286,23 +197,117 @@ input[type='number'] {
         }
     }
 }
-.checkbox {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
+.wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    .label {
+        display: flex;
+        flex-direction: column-reverse;
+        &:first-child {
+            margin-right: 30px;
+        }
+        &__title {
+            font-family: "IBMPlexSans-Medium";
+            margin-bottom: 21px;
+            font-size: 14px;
+            line-height: 15px;
+            color: #C4C4C4;
+        }
+        &__input {
+            font-family: "IBMPlexSans-Medium";
+            padding-left: 16px;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FF3B3D;
+            width: 270px;
+            height: 76px;
+            border: 1px solid #E8DFE0;
+            box-sizing: border-box;
+            &:focus {
+                border: 1px solid #FF3B3D;
+            }
+        }
+    }
+    .choose {
+        margin-top: 36px;
+        display: flex;
+        cursor: pointer;
+        &__btn {
+            background: #FF3B3D;
+            font-family: "IBMPlexSans-Light";
+            position: relative;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 15px;
+            color: #FFFFFF;
+            width: 202px;
+            height: 76px;
+            & label {
+                cursor: pointer;
+            }
+        }
+        &__arrow {
+            background: #0E0A19;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 76px;
+            &::before {
+                content: "";
+                background: url(../img/arrow/arrow.svg) center/cover no-repeat;
+                position: absolute;
+                width: 14px;
+                height: 33px;
+            }
+        }
+    }
 }
-.checkbox + label:before {
-	content: '';
+.flex-block {
+    margin-top: 40px;
+    display: flex;
+    &__container {
+        display: flex;
+        width: 270px;
+        margin-right: 30px;
+    }
+    &__jackdaw {
+        width: 10px;
+        height: 10px;
+        background: #FF3B3D;
+        cursor: pointer;
+    }
+    &__text {
+        font-family: "IBMPlexSans-Light";
+        margin-left: 15px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #C4C4C4;
+    }
+}
+%check {
+    content: '';
 	position: absolute;
     width: 10px;
     height: 10px;
     background: #FF3B3D;
     cursor: pointer;
 }
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.checkbox + label:before {
+    @extend %check;
+}
 .checkbox:checked + label:before {
     width: 10px;
     height: 9px;
-    background: url(../img/arrow/Vector.svg) center no-repeat !important;
+    background: url(../img/arrow/Vector.svg) center no-repeat;
 }
 .slider-wrap {
     .slider-btn {
@@ -721,6 +726,7 @@ input[type='number'] {
 .thematic {
     margin-bottom: 107px;
     &__container {
+        margin-top: 60px;
         position: relative;
         display: flex;
     }
@@ -790,9 +796,9 @@ input[type='number'] {
             content: "";
             position: absolute;
             background: url(../img/thematic/Group8.svg) center/cover no-repeat;
-            margin-left: -32px;
-            width: 24px;
-            height: 24px;
+            margin: -2px 0 0 -32px;
+            width: 26px;
+            height: 26px;
         }
     }
 }
@@ -812,7 +818,7 @@ input[type='number'] {
         &:first-child {
             .columns__wrapper-text {
                 &:first-child {
-                    box-shadow: 0 21px 46px -10px #ad9999;
+                    box-shadow: 0 21px 46px -10px #c7b5b5;
                 }
                 &:last-child {
                     background: initial;
@@ -862,11 +868,29 @@ input[type='number'] {
             }
         }
     }
+    &__shadow {
+        box-shadow: 0 192px 14px 0px #cecdcd;
+        transition: all .4s ease-in-out;
+        border-radius: 30px;
+        margin: 0 auto;
+        width: 270px;
+        height: 300px;
+    }
     &__return {
+        transition: all .4s ease-in-out;
         position: absolute;
+        width: 300px;
+        top: 0;
         right: 0;
         overflow: hidden;
         height: 220px;
+        &:hover {
+            height: 262px;
+            top: -42px;
+        }
+        &:hover .columns__shadow {
+            box-shadow: 0 234px 14px 0px #cecdcd;
+        }
     }
     &__context {
         width: 270px;
@@ -977,10 +1001,93 @@ input[type='number'] {
         }
     }
     &__button  {
+        box-shadow: initial;
         & span {
             font-family: "IBMPlexSans-Light";
             font-weight: bold;
             font-size: 16px;
         }
+    }
+}
+%sizeFonts {
+    font-family: "IBMPlexSans-Bold";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+}
+.calculation {
+    &__container {
+        display: flex;
+        margin-top: 110px;
+    }
+    &__form-title {
+        margin-bottom: 39px;
+        & p {
+            font-family: "IBMPlexSans-Bold";
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19px;
+            color: #0E0A19;
+        }
+    }
+    &__contant {
+        padding: 42px 0 62px 100px;
+        position: relative;
+        z-index: 10;
+        & .send {
+            box-shadow: initial;
+        }
+        .label__input:focus + .label__title {
+            color: #FF3B3D;
+        }
+    }
+    &__columns {
+        position: relative;
+        &:first-child {
+            width: 44%;
+        }
+        &-fond {
+            background: #E8DFE0;
+            position: absolute;
+            height: 100%;
+            width: 50vw;
+            z-index: 9;
+            left: 0;
+        }
+        &-title {
+            margin: 32px 0 110px 0;
+            & h1 {
+                @extend %sizeFonts;
+                color: #0E0A19;
+                &:last-child::after {
+                    content: "";
+                    position: absolute;
+                    background: url(../img/description/Vector.svg) center/cover no-repeat;
+                    margin: 22px 0 0 8px;
+                    width: 55px;
+                    height: 22px;
+                }
+            }
+        }
+        &-text {
+            & p {
+                @extend %sizeFonts;
+                color: #FF3B3D;
+            }
+        }
+        & .label__title, .calculation__contant .flex-block__text {
+            font-family: "IBMPlexSans-Light";
+            font-weight: 600;
+            color: #0E0A19;
+        }
+    }
+    &__percent {
+        background: url(../img/percent/Group-5.svg) center/cover no-repeat;
+        width: 290px;
+        height: 334px;
+        position: absolute;
+        z-index: 11;
+        right: -40px;
+        bottom: 47px;
     }
 }

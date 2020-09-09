@@ -20,18 +20,18 @@
                 <form action="" enctype="multipart/form-data">
                     <div class="wrapper">
                         <label class="label">
-                            <p class="label__title">Введите ваше имя</p>
                             <input type="text" name="name" class="label__input">
+                            <p class="label__title">Введите ваше имя</p>
                         </label>
                         <label class="label">
-                            <p class="label__title">Введите ваш e mail</p>
                             <input type="email" class="label__input" name="mail">
+                            <p class="label__title">Введите ваш e mail</p>
                         </label>
                     </div>
                     <div class="wrapper">
                         <label class="label">
-                            <p class="label__title">Введите ваш номер телефона</p>
                             <input type="number" class="label__input" name="number">
+                            <p class="label__title">Введите ваш номер телефона</p>
                         </label>
                         <label class="choose">
                             <div class="choose__arrow"></div>
@@ -41,10 +41,10 @@
                             <input id="files" style="display: none;" name="userfile" accept="image/*" type="file">
                         </label>
                     </div>
-                    <div class="flex-block" required>
+                    <div class="flex-block">
                         <input required type="checkbox" class="checkbox" id="checkbox" />
                         <label for="checkbox" class="flex-block__container">
-                            <span class="flex-block__jackdaw"><span class="flex-block__check-mark"></span></span>
+                            <span class="flex-block__jackdaw"></span></span>
                             <div class="flex-block__wrap">
                                 <p class="flex-block__text">Я согласен с условиями обработки</p>
                                 <p class="flex-block__text">и исползования персональных данных</p>
@@ -355,21 +355,23 @@
                         <p>посчитает</p>
                     </div>
                     <div class="columns__return">
-                        <div class="columns__context">
-                            <div class="columns__inside">
-                                <div class="columns__center">
-                                    <div class="columns__curtain">
-                                        <div class="columns__poin"></div>
+                        <div class="columns__shadow">
+                            <div class="columns__context">
+                                <div class="columns__inside">
+                                    <div class="columns__center">
+                                        <div class="columns__curtain">
+                                            <div class="columns__poin"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="columns__phone-title">
-                                    <h1>Расчет</h1>
-                                    <h1>вашей</h1>
-                                    <h1>комнаты</h1>
-                                </div>
-                                <div class="columns__price">
-                                    <div class="columns__price-teeth"></div>
-                                    <div class="columns__price-figure"><p>28 000 р.-</p></div>
+                                    <div class="columns__phone-title">
+                                        <h1>Расчет</h1>
+                                        <h1>вашей</h1>
+                                        <h1>комнаты</h1>
+                                    </div>
+                                    <div class="columns__price">
+                                        <div class="columns__price-teeth"></div>
+                                        <div class="columns__price-figure"><p>28 000 р.-</p></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -389,6 +391,69 @@
                     <div class="columns__bnt border">
                         <button class="columns__button send"><span>конструктор</span></button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculation widthCenter">
+        <div class="calculation__container">
+            <div class="calculation__columns">
+                <div class="calculation__percent"></div>
+                <div class="calculation__columns-title">
+                    <h1>Закажи</h1>
+                    <h1>бесплатный</h1>
+                    <h1>расчет</h1>
+                </div>
+                <div class="calculation__columns-text">
+                    <p>и получи</p>
+                    <p>скидку</p>
+                </div>
+            </div>
+            <div class="calculation__columns">
+                <div class="calculation__columns-fond"></div>
+                <div class="calculation__contant">
+                    <div class="calculation__form-title">
+                        <p>Заполните форму и наши менеджеры</p>
+                        <p>сделают вам расчет и перезвонят</p>
+                    </div>
+                    <form action="" enctype="multipart/form-data">
+                        <div class="wrapper">
+                            <label class="label">
+                                <input type="text" name="name" class="label__input">
+                                <p class="label__title">Введите ваше имя</p>
+                            </label>
+                            <label class="label">
+                                <input type="email" class="label__input" name="mail">
+                                <p class="label__title">Введите ваш e mail</p>
+                            </label>
+                        </div>
+                        <div class="wrapper">
+                            <label class="label">
+                                <input type="number" class="label__input" name="number">
+                                <p class="label__title">Введите ваш номер телефона</p>
+                            </label>
+                            <label class="choose">
+                                <div class="choose__arrow"></div>
+                                <div class="choose__btn">
+                                    <label for="files">прикрепить файлы</label>
+                                </div>
+                                <input id="files" style="display: none;" name="userfile" accept="image/*" type="file">
+                            </label>
+                        </div>
+                        <div class="flex-block">
+                            <input required type="checkbox" class="checkbox" id="check"/>
+                            <label for="check" class="flex-block__container">
+                                <span class="flex-block__jackdaw"></span></span>
+                                <div class="flex-block__wrap">
+                                    <p class="flex-block__text">Я согласен с условиями обработки</p>
+                                    <p class="flex-block__text">и исползования персональных данных</p>
+                                </div>
+                            </label>
+                            <div class="flex-block__border border">
+                                <input type="submit" value="ПОЛУЧИТЬ РАСЧЕТ" class="flex-block__send send">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
