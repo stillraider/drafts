@@ -14,6 +14,12 @@ input[type='number'] {
     width: 100%;
     margin: 0 auto;
 }
+.flex-block__send, .holder__btn button, .thematic__button, .columns__button  {
+    transition: all .13s ease-in-out;
+    &:hover {
+        background: #FF3B3D;
+    }
+}
 .border {
     position: relative;
     &::before {
@@ -51,6 +57,7 @@ input[type='number'] {
         margin-bottom: 24px;
         & p {
             font-family: "IBMPlexSans-Medium";
+            text-shadow: 0px 4px 3px #d0d0d0, 0 0 0em #bbb9b9;
             font-weight: 600;
             font-size: 48px;
             line-height: 50px;
@@ -554,6 +561,7 @@ input[type='number'] {
     margin-top: 160px;
     &__columns {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 22px;
         &:nth-child(2) {
             .holder__wrap-links:nth-child(2) {
@@ -628,7 +636,6 @@ input[type='number'] {
             align-items: center;
         }
         &-text {
-            margin-right: 86px;
             & h1 {
                 font-family: "IBMPlexSans-Bold";
                 font-weight: 100;
@@ -881,7 +888,7 @@ input[type='number'] {
         position: absolute;
         width: 300px;
         top: 0;
-        right: 0;
+        right: -15px;
         overflow: hidden;
         height: 220px;
         &:hover {
@@ -1050,7 +1057,7 @@ input[type='number'] {
             background: #E8DFE0;
             position: absolute;
             height: 100%;
-            width: 50vw;
+            width: calc(50vw + 76px);
             z-index: 9;
             left: 0;
         }
@@ -1089,5 +1096,81 @@ input[type='number'] {
         z-index: 11;
         right: -40px;
         bottom: 47px;
+    }
+}
+.footer {
+    padding-bottom: 40px;
+    &__container {
+        margin-top: 20px;
+    }
+    &__columns {
+        display: flex;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        margin-right: 37px;
+        &:nth-child(2) {
+            margin-right: 40px;
+        }
+        &:nth-child(3) {
+            margin-right: 70px;
+        }
+        &:nth-child(4) {
+            margin-right: 60px;
+        }
+        & li {
+            margin-bottom: 10px;
+            & a span {
+                display: block;
+            }
+            & a {
+                font-family: "IBMPlexSans-Light";
+                font-size: 12px;
+                line-height: 12px;
+                color: #AA9FA1;
+            }
+        }
+        & h1, .footer__label p{
+            font-family: "IBMPlexSans-Medium";
+            margin-bottom: 13px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 15px;
+            color: #0E0A19;
+        }
+    }
+    &__label {
+        & p {
+            font-family: "IBMPlexMono-Medium";
+            font-weight: 600;
+            margin-bottom: 3px;
+            &:last-child::after {
+                content: "";
+                position: absolute;
+                background: url(../img/footer/semicircle.png) center/cover no-repeat;
+                margin: 7px 0 0 3px;
+                width: 15px;
+                height: 6px;
+            }
+        }
+    }
+    &__copyright {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        & p {
+            font-family: "IBMPlexSans-Light";
+            font-size: 12px;
+            line-height: 12px;
+            color: #312F2F;
+        }
+        &-img {
+            background: url(../img/footer/Ribbla_logo.svg) center/cover no-repeat;
+            width: 70px;
+            height: 14px;
+        }
     }
 }

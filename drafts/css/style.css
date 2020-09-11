@@ -129,6 +129,22 @@ input[type='number'] {
   margin: 0 auto;
 }
 
+.flex-block__send,
+.holder__btn button,
+.thematic__button,
+.columns__button {
+  -webkit-transition: all .13s ease-in-out;
+  -o-transition: all .13s ease-in-out;
+  transition: all .13s ease-in-out;
+}
+
+.flex-block__send:hover,
+.holder__btn button:hover,
+.thematic__button:hover,
+.columns__button:hover {
+  background: #FF3B3D;
+}
+
 .border {
   position: relative;
 }
@@ -177,6 +193,7 @@ input[type='number'] {
 
 .form-wrapper__title p {
   font-family: "IBMPlexSans-Medium";
+  text-shadow: 0px 4px 3px #d0d0d0, 0 0 0em #bbb9b9;
   font-weight: 600;
   font-size: 48px;
   line-height: 50px;
@@ -836,6 +853,9 @@ input[type='number'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 22px;
 }
 
@@ -916,10 +936,6 @@ input[type='number'] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.holder__wrap-text {
-  margin-right: 86px;
 }
 
 .holder__wrap-text h1 {
@@ -1215,7 +1231,7 @@ input[type='number'] {
   position: absolute;
   width: 300px;
   top: 0;
-  right: 0;
+  right: -15px;
   overflow: hidden;
   height: 220px;
 }
@@ -1425,7 +1441,7 @@ input[type='number'] {
   background: #E8DFE0;
   position: absolute;
   height: 100%;
-  width: 50vw;
+  width: calc(50vw + 76px);
   z-index: 9;
   left: 0;
 }
@@ -1466,4 +1482,106 @@ input[type='number'] {
   z-index: 11;
   right: -40px;
   bottom: 47px;
+}
+
+.footer {
+  padding-bottom: 40px;
+}
+
+.footer__container {
+  margin-top: 20px;
+}
+
+.footer__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list {
+  margin-right: 37px;
+}
+
+.footer__list:nth-child(2) {
+  margin-right: 40px;
+}
+
+.footer__list:nth-child(3) {
+  margin-right: 70px;
+}
+
+.footer__list:nth-child(4) {
+  margin-right: 60px;
+}
+
+.footer__list li {
+  margin-bottom: 10px;
+}
+
+.footer__list li a span {
+  display: block;
+}
+
+.footer__list li a {
+  font-family: "IBMPlexSans-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #AA9FA1;
+}
+
+.footer__list h1,
+.footer__list .footer__label p {
+  font-family: "IBMPlexSans-Medium";
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  color: #0E0A19;
+}
+
+.footer__label p {
+  font-family: "IBMPlexMono-Medium";
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.footer__label p:last-child::after {
+  content: "";
+  position: absolute;
+  background: url(../img/footer/semicircle.png) center/cover no-repeat;
+  margin: 7px 0 0 3px;
+  width: 15px;
+  height: 6px;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__copyright p {
+  font-family: "IBMPlexSans-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #312F2F;
+}
+
+.footer__copyright-img {
+  background: url(../img/footer/Ribbla_logo.svg) center/cover no-repeat;
+  width: 70px;
+  height: 14px;
 }
